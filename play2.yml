@@ -2,8 +2,8 @@
 - name: Installing homework1
   hosts: node1
   gather_facts: yes
-  vars_files:
-          -  myvariables.yml
+  #vars_files:
+  #       -  myvariables.yml
   tasks:
           - name: Installing httpd firewalld mariadb-server php php-mysqlnd
             yum:
